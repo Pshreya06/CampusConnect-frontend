@@ -1,0 +1,435 @@
+/* =========================================
+   CAMPUSCONNECT - EVENT DETAILS PAGE
+========================================= */
+
+
+/* =========================================
+   1. MAIN PAGE
+========================================= */
+
+.event-details-page {
+    background: #f8f7f4;
+
+    min-height: 100vh;
+
+    padding: 45px 7% 90px;
+}
+
+
+/* =========================================
+   2. BACK LINK
+========================================= */
+
+.back-container {
+    max-width: 1200px;
+
+    margin: 0 auto 35px;
+}
+
+.back-link {
+    color: #5f5965;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    transition: 0.2s;
+}
+
+.back-link:hover {
+    color: #3d8b88;
+}
+
+
+/* =========================================
+   3. EVENT HEADER
+========================================= */
+
+.event-detail-header {
+    max-width: 1000px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.event-detail-category {
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    margin-bottom: 18px;
+
+    border-radius: 20px;
+
+    background: #e2f0ef;
+
+    color: #3d8b88;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.event-detail-header h1 {
+    margin-bottom: 20px;
+
+    color: #30234a;
+
+    font-size: clamp(40px, 5vw, 64px);
+
+    line-height: 1.1;
+}
+
+.event-detail-intro {
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    color: #69636e;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   4. INFORMATION LAYOUT
+========================================= */
+
+.event-information {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr) 340px;
+
+    gap: 55px;
+
+    align-items: start;
+}
+
+
+/* =========================================
+   5. MAIN CONTENT
+========================================= */
+
+.event-main-content {
+    background: #ffffff;
+
+    padding: 40px;
+
+    border: 1px solid #e5e1dc;
+
+    border-radius: 14px;
+}
+
+.detail-section {
+    padding-bottom: 30px;
+
+    margin-bottom: 30px;
+
+    border-bottom: 1px solid #eeeae5;
+}
+
+.detail-section:last-child {
+    padding-bottom: 0;
+
+    margin-bottom: 0;
+
+    border-bottom: none;
+}
+
+.detail-section h2 {
+    margin-bottom: 15px;
+
+    color: #30234a;
+
+    font-size: 23px;
+}
+
+.detail-section p {
+    margin-bottom: 13px;
+
+    color: #69636e;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+.detail-section p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   6. DETAIL LIST
+========================================= */
+
+.detail-list {
+    margin: 0;
+
+    padding-left: 20px;
+
+    color: #69636e;
+
+    font-size: 14px;
+
+    line-height: 2;
+}
+
+.detail-list li::marker {
+    color: #3d8b88;
+}
+
+
+/* =========================================
+   7. TEAM INFORMATION
+========================================= */
+
+.team-info {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+.team-info > div {
+    padding: 18px;
+
+    border: 1px solid #e5e1dc;
+
+    border-radius: 9px;
+
+    background: #faf9f7;
+}
+
+.team-info strong {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #30234a;
+
+    font-size: 13px;
+}
+
+.team-info span {
+    color: #77717b;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   8. SIDEBAR
+========================================= */
+
+.event-sidebar {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+/* =========================================
+   9. EVENT INFORMATION CARD
+========================================= */
+
+.event-info-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 17px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e1dc;
+
+    border-radius: 10px;
+}
+
+.info-icon {
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+
+    background: #e2f0ef;
+
+    color: #3d8b88;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+.event-info-card span {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #8a848c;
+
+    font-size: 11px;
+}
+
+.event-info-card strong {
+    color: #30234a;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   10. REGISTRATION CARD
+========================================= */
+
+.registration-card {
+    margin-top: 8px;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    background: #30234a;
+
+    color: #ffffff;
+}
+
+.registration-card h3 {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+}
+
+.registration-card p {
+    margin-bottom: 20px;
+
+    color: #ddd8e5;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   11. REGISTER BUTTON
+========================================= */
+
+.register-button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #3d8b88;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.register-button:hover {
+    background: #4b9d99;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   12. RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 900px) {
+
+    .event-information {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .event-sidebar {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .registration-card {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .event-details-page {
+        padding: 35px 5% 70px;
+    }
+
+    .event-detail-header {
+        margin-bottom: 40px;
+    }
+
+    .event-detail-header h1 {
+        font-size: 38px;
+    }
+
+    .event-detail-intro {
+        font-size: 15px;
+    }
+
+    .event-main-content {
+        padding: 25px;
+    }
+
+    .team-info {
+        grid-template-columns: 1fr;
+    }
+
+    .event-sidebar {
+        display: flex;
+    }
+
+}

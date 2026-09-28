@@ -1,0 +1,468 @@
+/* =========================================
+   CAMPUSCONNECT - EVENTS PAGE
+========================================= */
+
+
+/* =========================================
+   1. EVENTS HERO
+========================================= */
+
+.events-hero {
+    padding: 85px 7% 55px;
+
+    background: #f8f7f4;
+
+    text-align: center;
+}
+
+.events-heading {
+    max-width: 800px;
+
+    margin: 0 auto 35px;
+}
+
+.events-heading h1 {
+    margin-bottom: 20px;
+
+    color: #30234a;
+
+    font-size: clamp(40px, 5vw, 60px);
+
+    line-height: 1.1;
+}
+
+.events-heading h1 span {
+    color: #3d8b88;
+}
+
+.events-heading > p:not(.section-label) {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #69636e;
+
+    font-size: 17px;
+}
+
+
+/* =========================================
+   2. SEARCH
+========================================= */
+
+.event-search {
+    width: 100%;
+
+    max-width: 650px;
+
+    margin: 0 auto;
+}
+
+.event-search input {
+    width: 100%;
+
+    padding: 16px 20px;
+
+    border: 1px solid #dcd8d3;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #292631;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    outline: none;
+
+    box-shadow:
+        0 8px 25px rgba(48, 35, 74, 0.05);
+
+    transition: 0.25s;
+}
+
+.event-search input:focus {
+    border-color: #3d8b88;
+
+    box-shadow:
+        0 0 0 3px rgba(61, 139, 136, 0.10);
+}
+
+.event-search input::placeholder {
+    color: #aaa4ad;
+}
+
+
+/* =========================================
+   3. FILTER CONTROLS
+========================================= */
+
+.event-controls {
+    padding: 30px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e7e4df;
+}
+
+.category-filters {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+}
+
+.filter-button {
+    padding: 9px 17px;
+
+    border: 1px solid #ddd9d4;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    color: #5f5965;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.filter-button:hover {
+    border-color: #3d8b88;
+
+    color: #3d8b88;
+}
+
+.filter-button.active-filter {
+    border-color: #30234a;
+
+    background: #30234a;
+
+    color: #ffffff;
+}
+
+
+/* Sort dropdown */
+
+#eventSort {
+    min-width: 160px;
+
+    padding: 10px 13px;
+
+    border: 1px solid #ddd9d4;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #5f5965;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   4. EVENTS CONTAINER
+========================================= */
+
+.events-container {
+    padding: 65px 7% 100px;
+
+    background: #f8f7f4;
+}
+
+.events-grid {
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   5. EVENT CARD
+========================================= */
+
+.event-item {
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e1dc;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.03);
+
+    transition:
+        transform 0.25s,
+        box-shadow 0.25s;
+}
+
+.event-item:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   6. EVENT IMAGE AREA
+========================================= */
+
+.event-image {
+    height: 170px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* Different event types */
+
+.hackathon-image {
+    background: #30234a;
+}
+
+.workshop-image {
+    background: #3d8b88;
+}
+
+.seminar-image {
+    background: #696275;
+}
+
+.competition-image {
+    background: #51436c;
+}
+
+.cultural-image {
+    background: #477d7a;
+}
+
+.design-image {
+    background: #7a7185;
+}
+
+
+/* =========================================
+   7. EVENT DETAILS
+========================================= */
+
+.event-details {
+    padding: 25px;
+}
+
+.event-category {
+    color: #3d8b88;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.event-details h2 {
+    margin: 8px 0 10px;
+
+    color: #30234a;
+
+    font-size: 21px;
+
+    line-height: 1.25;
+}
+
+.event-details > p {
+    min-height: 65px;
+
+    margin-bottom: 20px;
+
+    color: #69636e;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   8. EVENT META
+========================================= */
+
+.event-meta {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    padding: 13px 0;
+
+    margin-bottom: 18px;
+
+    border-top: 1px solid #eeeae5;
+
+    border-bottom: 1px solid #eeeae5;
+
+    color: #77717b;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   9. DETAILS BUTTON
+========================================= */
+
+.event-details-button {
+    display: block;
+
+    width: 100%;
+
+    padding: 11px;
+
+    border-radius: 7px;
+
+    background: #30234a;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: 0.25s;
+}
+
+.event-details-button:hover {
+    background: #463363;
+}
+
+
+/* =========================================
+   10. NO EVENTS MESSAGE
+========================================= */
+
+.no-events {
+    padding: 70px 20px;
+
+    text-align: center;
+}
+
+.no-events h3 {
+    margin-bottom: 8px;
+
+    color: #30234a;
+
+    font-size: 22px;
+}
+
+.no-events p {
+    color: #77717b;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   11. RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .events-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .event-controls {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .category-filters {
+        justify-content: center;
+    }
+
+    #eventSort {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .events-hero {
+        padding: 60px 5% 45px;
+    }
+
+    .events-container {
+        padding: 45px 5% 70px;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .events-heading h1 {
+        font-size: 40px;
+    }
+
+    .event-controls {
+        padding: 25px 5%;
+    }
+
+}

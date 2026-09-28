@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Events | CampusConnect</title>
+
+    <!-- Main Website CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Events Page CSS -->
+    <link rel="stylesheet" href="CSS/events.css">
+
+</head>
+
+
+<body>
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            Campus<span>Connect</span>
+        </a>
+
+
+        <nav class="navigation">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="events.html" class="active">
+                Events
+            </a>
+
+            <a href="clubs.html">
+                Clubs
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+        </nav>
+
+
+        <div class="nav-buttons">
+
+            <!-- Login will be connected to the React login later -->
+
+            <a href="#" class="login-button">
+                Login
+            </a>
+
+            <a href="#" class="signup-button">
+                Get Started
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         EVENTS PAGE
+    ========================== -->
+
+    <main>
+
+
+        <!-- Page Introduction -->
+
+        <section class="events-hero">
+
+            <div class="events-heading">
+
+                <p class="section-label">
+                    CAMPUS ACTIVITIES
+                </p>
+
+                <h1>
+                    Discover what's happening
+                    <span>around your campus.</span>
+                </h1>
+
+                <p>
+                    Explore hackathons, workshops, seminars,
+                    competitions and activities happening across
+                    your campus community.
+                </p>
+
+            </div>
+
+
+            <!-- Search -->
+
+            <div class="event-search">
+
+                <input
+                    type="text"
+                    id="eventSearch"
+                    placeholder="Search events..."
+                >
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             FILTER SECTION
+        ========================== -->
+
+        <section class="event-controls">
+
+            <div class="category-filters">
+
+                <button
+                    class="filter-button active-filter"
+                    data-category="all"
+                >
+                    All
+                </button>
+
+                <button
+                    class="filter-button"
+                    data-category="hackathon"
+                >
+                    Hackathons
+                </button>
+
+                <button
+                    class="filter-button"
+                    data-category="workshop"
+                >
+                    Workshops
+                </button>
+
+                <button
+                    class="filter-button"
+                    data-category="seminar"
+                >
+                    Seminars
+                </button>
+
+                <button
+                    class="filter-button"
+                    data-category="competition"
+                >
+                    Competitions
+                </button>
+
+                <button
+                    class="filter-button"
+                    data-category="cultural"
+                >
+                    Cultural
+                </button>
+
+            </div>
+
+
+            <select id="eventSort">
+
+                <option value="default">
+                    Sort Events
+                </option>
+
+                <option value="date">
+                    Upcoming First
+                </option>
+
+                <option value="name">
+                    Name A-Z
+                </option>
+
+            </select>
+
+        </section>
+
+
+
+        <!-- =========================
+             EVENTS GRID
+        ========================== -->
+
+        <section class="events-container">
+
+            <div class="events-grid" id="eventsGrid">
+
+
+                <!-- Event 1 -->
+
+                <article
+                    class="event-item"
+                    data-category="hackathon"
+                    data-name="Campus Hackathon 2026"
+                >
+
+                    <div class="event-image hackathon-image">
+
+                        <span>
+                            HACKATHON
+                        </span>
+
+                    </div>
+
+
+                    <div class="event-details">
+
+                        <span class="event-category">
+                            Hackathon
+                        </span>
+
+                        <h2>
+                            Campus Hackathon 2026
+                        </h2>
+
+                        <p>
+                            Build innovative solutions,
+                            solve real-world problems and
+                            compete with students across campus.
+                        </p>
+
+
+                        <div class="event-meta">
+
+                            <span>
+                                25 Oct 2026
+                            </span>
+
+                            <span>
+                                Campus Hall
+                            </span>
+
+                        </div>
+
+
+                        <a
+                            href="event-details.html"
+                            class="event-details-button"
+                        >
+                            View Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Event 2 -->
+
+                <article
+                    class="event-item"
+                    data-category="workshop"
+                    data-name="Web Development Workshop"
+                >
+
+                    <div class="event-image workshop-image">
+
+                        <span>
+                            WORKSHOP
+                        </span>
+
+                    </div>
+
+
+                    <div class="event-details">
+
+                        <span class="event-category">
+                            Workshop
+                        </span>
+
+                        <h2>
+                            Web Development Workshop
+                        </h2>
+
+                        <p>
+                            Learn modern web development
+                            fundamentals and build your first
+                            interactive website.
+                        </p>
+
+
+                        <div class="event-meta">
+
+                            <span>
+                                28 Oct 2026
+                            </span>
+
+                            <span>
+                                Lab 204
+                            </span>
+
+                        </div>
+
+
+                        <a
+                            href="event-details.html"
+                            class="event-details-button"
+                        >
+                            View Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Event 3 -->
+
+                <article
+                    class="event-item"
+                    data-category="seminar"
+                    data-name="Future of Technology"
+                >
+
+                    <div class="event-image seminar-image">
+
+                        <span>
+                            SEMINAR
+                        </span>
+
+                    </div>
+
+
+                    <div class="event-details">
+
+                        <span class="event-category">
+                            Seminar
+                        </span>
+
+                        <h2>
+                            Future of Technology
+                        </h2>
+
+                        <p>
+                            Explore emerging technologies
+                            and how they are shaping the future
+                            of engineering and innovation.
+                        </p>
+
+
+                        <div class="event-meta">
+
+                            <span>
+                                2 Nov 2026
+                            </span>
+
+                            <span>
+                                Auditorium
+                            </span>
+
+                        </div>
+
+
+                        <a
+                            href="event-details.html"
+                            class="event-details-button"
+                        >
+                            View Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Event 4 -->
+
+                <article
+                    class="event-item"
+                    data-category="competition"
+                    data-name="Code Sprint Challenge"
+                >
+
+                    <div class="event-image competition-image">
+
+                        <span>
+                            COMPETITION
+                        </span>
+
+                    </div>
+
+
+                    <div class="event-details">
+
+                        <span class="event-category">
+                            Competition
+                        </span>
+
+                        <h2>
+                            Code Sprint Challenge
+                        </h2>
+
+                        <p>
+                            Test your programming skills
+                            through a series of exciting
+                            coding challenges.
+                        </p>
+
+
+                        <div class="event-meta">
+
+                            <span>
+                                6 Nov 2026
+                            </span>
+
+                            <span>
+                                Computer Lab
+                            </span>
+
+                        </div>
+
+
+                        <a
+                            href="event-details.html"
+                            class="event-details-button"
+                        >
+                            View Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Event 5 -->
+
+                <article
+                    class="event-item"
+                    data-category="cultural"
+                    data-name="Campus Cultural Fest"
+                >
+
+                    <div class="event-image cultural-image">
+
+                        <span>
+                            CULTURAL
+                        </span>
+
+                    </div>
+
+
+                    <div class="event-details">
+
+                        <span class="event-category">
+                            Cultural
+                        </span>
+
+                        <h2>
+                            Campus Cultural Fest
+                        </h2>
+
+                        <p>
+                            Celebrate creativity, music,
+                            dance and the diverse culture
+                            of our campus community.
+                        </p>
+
+
+                        <div class="event-meta">
+
+                            <span>
+                                12 Nov 2026
+                            </span>
+
+                            <span>
+                                Main Ground
+                            </span>
+
+                        </div>
+
+
+                        <a
+                            href="event-details.html"
+                            class="event-details-button"
+                        >
+                            View Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Event 6 -->
+
+                <article
+                    class="event-item"
+                    data-category="workshop"
+                    data-name="UI UX Design Workshop"
+                >
+
+                    <div class="event-image design-image">
+
+                        <span>
+                            DESIGN
+                        </span>
+
+                    </div>
+
+
+                    <div class="event-details">
+
+                        <span class="event-category">
+                            Workshop
+                        </span>
+
+                        <h2>
+                            UI/UX Design Workshop
+                        </h2>
+
+                        <p>
+                            Learn design thinking, user research
+                            and the fundamentals of creating
+                            user-friendly digital experiences.
+                        </p>
+
+
+                        <div class="event-meta">
+
+                            <span>
+                                18 Nov 2026
+                            </span>
+
+                            <span>
+                                Design Studio
+                            </span>
+
+                        </div>
+
+
+                        <a
+                            href="event-details.html"
+                            class="event-details-button"
+                        >
+                            View Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+
+            <!-- No results message -->
+
+            <div
+                id="noEvents"
+                class="no-events"
+                style="display: none;"
+            >
+
+                <h3>
+                    No events found
+                </h3>
+
+                <p>
+                    Try a different search or category.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Campus<span>Connect</span>
+        </div>
+
+        <p>
+            Connecting students. Building communities.
+        </p>
+
+        <p class="copyright">
+            © 2026 CampusConnect
+        </p>
+
+    </footer>
+
+
+
+    <!-- Events JavaScript -->
+
+    <script src="JS/events.js"></script>
+
+</body>
+
+</html>
